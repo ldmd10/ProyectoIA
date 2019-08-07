@@ -1,4 +1,5 @@
 from django.db import models
+#hola prueba
 
 # Create your models here.
 class Algoritmo(models.Model):

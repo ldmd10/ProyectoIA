@@ -1,8 +1,5 @@
 from django.db import models
-#hola prueba
 
-
-# oeoeoe gonoreea
 
 # Create your models here.
 class Algoritmo(models.Model):
@@ -20,7 +17,16 @@ class Algoritmo(models.Model):
 
 
 class Entrenamiento(models.Model):
-    idEntrenamiento = models.AutoField(primary_key=True, max_length=10)
+    idEntrenamiento = models.AutoField(primary_key=True,null=False, max_length=10)
     tituloEntrenamiento = models.CharField(max_length=80)
     foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=False, on_delete=models.CASCADE)
-    rutaArchivo = models.FileField(upload_to='Archivos/', null=True, blank=True)  # organizar upload to
+
+
+class Ejecucion(models.Model):
+    idEjecucion=models.AutoField(primary_key=True,max_length=10)
+    tituloEjecucion=models.CharField(max_length=80)
+    foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE)
+    foraneaEntrenamiento = models.ForeignKey(Entrenamiento, null=True, on_delete=models.CASCADE)
+    datoPrueba=models.FileField(upload_to='Archivos/Test', null=False, blank=False)
+    tiempoEjecucion=models.TimeField(null=False)
+

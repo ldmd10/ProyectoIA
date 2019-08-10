@@ -5,6 +5,7 @@ from django.db import models
 class Algoritmo(models.Model):
     nombreAlgoritmo = models.CharField(max_length=200, null=True, blank=True)
     tipo = models.CharField(max_length=100, null=True, blank=True)
+    descripcion = models.TextField(max_length=100, null=True, blank=True)
 
     def __str__(self):
         return '{}'.format(self.nombreAlgoritmo)
@@ -38,6 +39,7 @@ class Entrenamiento(models.Model):
     idEntrenamiento = models.AutoField(primary_key=True, null=False, max_length=10)
     tituloEntrenamiento = models.CharField(max_length=80)
     foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=False, on_delete=models.CASCADE)
+    # foraneaDataSet=models.ForeignKey(DataSet,null=False, on_delete=models.CASCADE)
     tiempoEntrenamiento = models.TimeField(null=True)
     archivoEntrenamiento = models.FileField(upload_to='Archivos/Entrenamiento', null=True, blank=False)
 

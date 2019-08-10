@@ -1,7 +1,5 @@
 from django.shortcuts import render
+from Apps.dataSet.models import DataSet
 
 
 # Create your views here.
-
-def algotimos_list(request):
-    return render(request, 'algoritmo/algoritmo_list.html', {})

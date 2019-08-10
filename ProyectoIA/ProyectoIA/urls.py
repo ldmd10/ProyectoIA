@@ -14,12 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include
+from ProyectoIA.views import index
 
+# from Apps.dataSet
 
 
 urlpatterns = [
+    path('', index, name='index'),
     path('admin/', admin.site.urls),
-    path('', include('Apps.algoritmo.urls')),
+    # path(r'^/dataSet', include("Apps.dataSet.urls")),
+    # path(r'^/algoritmo', include("Apps.dataSet.urls")),
+    # path(r'^/entrenamiento', include("Apps.dataSet.urls")),
+    # path(r'^/prueba', include("Apps.dataSet.urls")),
 
 ]

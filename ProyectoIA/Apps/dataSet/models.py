@@ -18,3 +18,10 @@ class DataSet(models.Model):
                                    default=TIPO_DATA_TEXTO)
     tamañoDataSet = models.IntegerField(max_length=40)
     datos = models.FileField(upload_to='Archivos/dataSet', null=True, blank=False)
+
+    def __str__(self):
+        return '{}'.format(self.nombreDataSet)
+
+
+
+

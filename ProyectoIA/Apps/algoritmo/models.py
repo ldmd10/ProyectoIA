@@ -13,7 +13,6 @@ class Algoritmo(models.Model):
         (TIPO_ALG_SUPERVISADO, 'Supervisado'),
         (TIPO_ALG_NO_SUPERVISADO, 'No supervisado'),
     )
-
     nombreAlgoritmo = models.CharField(max_length=200, null=True, verbose_name="Nombre algoritmo")
     tipo = models.CharField(max_length=100, choices=OPCIONES_TIPO_ALG, default=TIPO_ALG_NO_SUPERVISADO)
     descripcion = models.TextField(max_length=100, blank=True)
@@ -51,7 +50,7 @@ class Entrenamiento(models.Model):
     tituloEntrenamiento = models.CharField(max_length=80, verbose_name="Titulo entrenamiento")
     foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=False, on_delete=models.CASCADE, verbose_name="Algoritmo")
     foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
-    tiempoEntrenamiento = models.TimeField(null=True, verbose_name="Tiempo entrenamiento")
+    tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
 
     def __str__(self):
         return '{}'.format(self.tituloEntrenamiento)
@@ -64,6 +63,10 @@ class Ejecucion(models.Model):
     foraneaEntrenamiento = models.ForeignKey(Entrenamiento, null=True, on_delete=models.CASCADE)
     datoPrueba = models.FileField(upload_to='Archivos/Prueba', null=True, blank=False)
     tiempoEjecucion = models.TimeField(null=False)
+
+    @property
+    def filename(self):
+        return self.datoPrueba.name.rsplit('/', 1)[-1]
 
     def __str__(self):
         return '{}'.format(self.tituloEjecucion)

@@ -15,17 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
 from ProyectoIA.views import index
 
 # from Apps.dataSet
 
 
 urlpatterns = [
-    path('', index, name='index'),
+    url(r'^$', index, name='index'),
     path('admin/', admin.site.urls),
-    # path(r'^/dataSet', include("Apps.dataSet.urls")),
-    # path(r'^/algoritmo', include("Apps.dataSet.urls")),
-    # path(r'^/entrenamiento', include("Apps.dataSet.urls")),
-    # path(r'^/prueba', include("Apps.dataSet.urls")),
+    url(r'^/dataSet', include("Apps.dataSet.urls")),
+    url(r'^/algoritmo', include("Apps.dataSet.urls")),
+    url(r'^/entrenamiento', include("Apps.dataSet.urls")),
+    url(r'^/prueba', include("Apps.dataSet.urls")),
 
 ]

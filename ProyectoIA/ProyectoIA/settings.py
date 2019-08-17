@@ -24,7 +24,7 @@ SECRET_KEY = '0$&wl9_b2#=*0u3of7cn6dh9up0b#j1z1by9^=b&725na+hx83'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.26']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'ProyectoIA.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'proyectoia',
-        'USER': 'root',
-        'PASSWORD': 'oegiank123',
-        'HOST': '35.231.168.132',
+        'NAME': 'db_proyecto_ia',
+        'USER': 'admin',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }

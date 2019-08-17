@@ -1,11 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<h1>Hola chis
-</h1>
-</body>
-</html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'Includes/bootstrap/css/bootstrap.min.css' %}">
+{% block content %}
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    nombre
+                </th>
+                <th>
+                    tipo
+                </th>
+                <th>
+                    descripcion
+                </th>
+                <th>
+                    ACCION
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <form method="post">
+                {% csrf_token %}
+                {% for materia in object_list %}
+                    <tr>
+                        <td>
+                            {{ materia.nombreAlgoritmo }}
+                        </td>
+                        <td>
+                            {{ materia.tipo }}
+                        </td>
+                        <td>
+                            {{ materia.descripcion }}
+                        </td>
+                        <td>
+                            <a class="btn btn-success btn-sm col-xs-6" href="{% url 'ver' materia.id %}"> ver </a>
+                            <a class="btn btn-success btn-sm col-xs-6" href="{% url 'eliminar' materia.id %}"> xxx </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </form>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

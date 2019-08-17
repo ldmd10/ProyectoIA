@@ -24,9 +24,6 @@ from ProyectoIA.views import index
 urlpatterns = [
     url(r'^$', index, name='index'),
     path('admin/', admin.site.urls),
-    url(r'^/dataSet', include("Apps.dataSet.urls")),
-    url(r'^/algoritmo', include("Apps.dataSet.urls")),
-    url(r'^/entrenamiento', include("Apps.dataSet.urls")),
-    url(r'^/prueba', include("Apps.dataSet.urls")),
+    url(r'^algoritmo/', include("Apps.algoritmo.urls")),
 
 ]

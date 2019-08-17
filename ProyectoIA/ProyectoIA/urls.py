@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     path('admin/', admin.site.urls),
     url(r'^algoritmo/', include("Apps.algoritmo.urls")),
+    url(r'^dataset/', include("Apps.dataSet.urls")),
 
 ]

@@ -7,41 +7,29 @@ from tkinter import *
 
         <div class="container d-flex align-items-center flex-column">
 
-            <!-- Masthead Avatar Image -->
-            <img class="col-xl-2" src="{% static 'img/avataaars.svg' %}" alt="">
-
-            <!-- Masthead Heading -->
-            <h1 class="masthead-heading text-uppercase mb-0">IA DataSet</h1>
-
-            <!-- Icon Divider -->
+            <h1 class="masthead-heading text-uppercase mb-0">Agregar DataSet</h1>
 
         </div>
 
 {%endblock%}
 
 {%block content%}
-<div class="container">
-    <table class="table">
-        <thead>
-        <tr>
-            <th >
-                Nombre
-            </th>
-            <th>
-                Tipo
-            </th>
-             <th >
-                Tamaño
-            </th>
-            <th></th>
-
-        </tr>
-        </thead>
-
 
  <tbody>
-        <form method="get">
+        <form method="post" class="form-horizontal">
             {%csrf_token%}
+          <div class="form-group">
+            <label for="name">Name:</label>
+              <input type="text" id="name" />
+          </div>
+            <div>
+                 <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" />
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg"></textarea>
+            </div>
             {% for dataset in object_list %}
             <tr>
                 <td >
@@ -55,7 +43,7 @@ from tkinter import *
                 </td>
 
                 <td>
-                    <a class="btn btn-success btn-sm col-xl-6" href="">Ver</a>
+                    <a class="btn btn-success btn-sm col-xl-6" href="{%url ''}">Ver</a>
                 </td>
             </tr>
 
@@ -67,9 +55,9 @@ from tkinter import *
        <div style="padding-bottom:50px">
 
         <td >
-                    <a  class="btn btn-success btn-sm col-xl-2" href="{%url 'AgregarData'%}">Agregar</a>
+                    <a  class="btn btn-success btn-sm col-xl-2" href="{%url ''}">Agregar</a>
         </td>
  </div>
 
 {%endblock%}
-
+</form>

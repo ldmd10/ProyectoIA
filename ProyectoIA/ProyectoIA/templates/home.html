@@ -1,148 +1,157 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block Header %}
-    <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
+<!-- Masthead -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
 
-            <!-- Masthead Avatar Image -->
-            <img class="masthead-avatar mb-5" src="{% static 'img/avataaars.svg' %}" alt="">
+        <!-- Masthead Avatar Image -->
+        <img class="masthead-avatar mb-5" src="{% static 'img/avataaars.svg' %}" alt="">
 
-            <!-- Masthead Heading -->
-            <h1 class="masthead-heading text-uppercase mb-0">Sistemas Inteligentes II</h1>
+        <!-- Masthead Heading -->
+        <h1 class="masthead-heading text-uppercase mb-0">Sistemas Inteligentes II</h1>
 
-            <!-- Icon Divider -->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
             </div>
-
-            <!-- Masthead Subheading -->
-            <p class="masthead-subheading font-weight-light mb-0">Angie Daniela Chisco-Luis David Montoya Diaz</p>
-
+            <div class="divider-custom-line"></div>
         </div>
-    </header>
+
+        <!-- Masthead Subheading -->
+        <p class="masthead-subheading font-weight-light mb-0">Angie Daniela Chisco-Luis David Montoya Diaz</p>
+
+    </div>
+</header>
 {% endblock %}
 
 {% block content %}
-    <!-- Portfolio Section -->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
+<!-- Portfolio Section -->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
 
-            <!-- Portfolio Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Inteligencia Artificial</h2>
-            <!-- Icon Divider -->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+        <!-- Portfolio Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Inteligencia Artificial</h2>
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
             </div>
-
-            <div class="row">
-                <div class="container d-flex align-items-center flex-column">
-                    <p class="lead" align="justify">La INTELIGENCIA ARTIFICIAL se ha ido ganando un lugar importante en
-                        la
-                        actualidad ya que
-                        ha logrado igualar y superar en algunas actividades el rendimiento humano y gracias a esto, se
-                        ha
-                        logrado desarrollar nuevos servicios,optimizar procesos de diferentes areas,y mejorar de manera
-                        sustancial
-                        la experiencia de usuarios de alguns servicios.</p>
-                    <p class="lead" align="justify">
-                        Pensar sobre las posibilidades que la IA pordía
-                        alcanzar asusta, pero aún las maquinas "inteligentes" no tienen la capacidad de darse cuentas de
-                        sí
-                        mismas, así como de su entorno. Son capaces de procesar grandes cantidades de datos en tiempo
-                        real,
-                        y hacerlo en ocaciones mejor que un ser humano, pero hay algo que nos sigue diferenciando a los
-                        seres humanos y a las maquinas: la CONCIENCIA.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Portfolio Grid Items -->
-            <div class="row">
-
-                <!-- Portfolio Item 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="{% static 'img/portfolio/cabin.png' %}" alt="">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="{% static 'img/portfolio/cake.png' %}" alt="">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="{% static 'img/portfolio/circus.png' %}" alt="">
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.row -->
+            <div class="divider-custom-line"></div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="page-section bg-primary text-white mb-0" id="about">
-        <div class="container">
+        <div class="row">
+            <div class="container d-flex align-items-center flex-column">
+                <p class="lead" align="justify">La INTELIGENCIA ARTIFICIAL se ha ido ganando un lugar importante en
+                    la
+                    actualidad ya que
+                    ha logrado igualar y superar en algunas actividades el rendimiento humano y gracias a esto, se
+                    ha
+                    logrado desarrollar nuevos servicios,optimizar procesos de diferentes areas,y mejorar de manera
+                    sustancial
+                    la experiencia de usuarios de alguns servicios.</p>
+                <p class="lead" align="justify">
+                    Pensar sobre las posibilidades que la IA pordía
+                    alcanzar asusta, pero aún las maquinas "inteligentes" no tienen la capacidad de darse cuentas de
+                    sí
+                    mismas, así como de su entorno. Son capaces de procesar grandes cantidades de datos en tiempo
+                    real,
+                    y hacerlo en ocaciones mejor que un ser humano, pero hay algo que nos sigue diferenciando a los
+                    seres humanos y a las maquinas: la CONCIENCIA.
+                </p>
+            </div>
+        </div>
 
-            <!-- About Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de</h2>
+        <!-- Portfolio Grid Items -->
+        <div class="row">
 
-            <!-- Icon Divider -->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <a href="{%url 'ListarAlgoritmos'%}">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    </a>
+                    <img class="img-fluid" src="{% static 'img/portfolio/cabin.png' %}" alt="">
                 </div>
-                <div class="divider-custom-line"></div>
             </div>
 
-            <!-- About Section Content -->
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead" align="justify">"La inteligencia artificial es la capacidad que tienen las maquinas
-                        para
-                        realizar
-                        actividades que por el momento los humanos hacen mejor" Rich y Knight [1994] y Stuart [1996]</p>
+            <!-- Portfolio Item 2 -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <a href="{%url 'ListarData'%}">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+
+                            <div class="portfolio-item-caption-content text-center text-white">
+
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+
+                        </div>
+                    </a>
+                    <img class="img-fluid" src="{% static 'img/portfolio/cake.png' %}">
                 </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead" align="justify">Este proyecto es desarrollado para el curso Sistemas inteligentes 2
-                        del
-                        programa de
-                        ingeniería en Sistemas y Computación de la Universidad de Caldas y brinda la posibilidad de
-                        ejecutar
-                        algunos algoritmos de reconocimiento de patrones, análisis de datos y clasificación</p>
+            </div>
+
+
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'img/portfolio/circus.png' %}" alt="">
                 </div>
             </div>
 
         </div>
-    </section>
+        <!-- /.row -->
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+        <!-- About Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de</h2>
+
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- About Section Content -->
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+                <p class="lead" align="justify">"La inteligencia artificial es la capacidad que tienen las maquinas
+                    para
+                    realizar
+                    actividades que por el momento los humanos hacen mejor" Rich y Knight [1994] y Stuart [1996]</p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p class="lead" align="justify">Este proyecto es desarrollado para el curso Sistemas inteligentes 2
+                    del
+                    programa de
+                    ingeniería en Sistemas y Computación de la Universidad de Caldas y brinda la posibilidad de
+                    ejecutar
+                    algunos algoritmos de reconocimiento de patrones, análisis de datos y clasificación</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 {% endblock %}

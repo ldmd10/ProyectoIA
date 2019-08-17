@@ -8,4 +8,4 @@ from Apps.dataSet.models import DataSet
 # Create your views here.
 class ListarAlgoritmos(ListView):
     model = Algoritmo
-    template_name = 'list_algoritmos.html'
+    template_name = 'algoritmo_list.html'

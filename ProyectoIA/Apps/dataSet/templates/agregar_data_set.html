@@ -3,61 +3,37 @@ from tkinter import *
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static 'Includes/bootstrap/css/bootstrap.min.css' %}">
 
-{%block Header%}
+{% block Header %}
 
-        <div class="container d-flex align-items-center flex-column">
+    <div class="container d-flex align-items-center flex-column">
+        <h1 class="masthead-heading text-uppercase mb-0">Agregar DataSet</h1>
+    </div>
 
-            <h1 class="masthead-heading text-uppercase mb-0">Agregar DataSet</h1>
+{% endblock %}
 
+{% block content %}
+
+
+
+    <div class="card-body mb-5">
+        <div class="row">
+            <div class="col-xl-5 mx-auto">
+                <p class="h4 text-center py-4">Agregar DataSet</p>
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="md-form mb-0">
+                            {{ field }}
+                            {{ field.label_tag }}
+                        </div>
+                    {% endfor %}
+                    <div class="text-center py-4">
+                        <button class="btn btn-outline-success waves-effect btn-rounded" type="submit">Guardar</button>
+                        <a class="btn btn-outline-danger waves-effect btn-rounded" href="{% url 'index' %}">Cancelar</a>
+                    </div>
+                </form>
+            </div>
         </div>
+    </div>
 
-{%endblock%}
-
-{%block content%}
-
- <tbody>
-        <form method="post" class="form-horizontal">
-            {%csrf_token%}
-          <div class="form-group">
-            <label for="name">Name:</label>
-              <input type="text" id="name" />
-          </div>
-            <div>
-                 <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" />
-            </div>
-            <div>
-                <label for="msg">Message:</label>
-                <textarea id="msg"></textarea>
-            </div>
-            {% for dataset in object_list %}
-            <tr>
-                <td >
-                    {{dataset.nombreDataSet}}
-                </td>
-                <td>
-                    {{dataset.tipoDataSet}}
-                </td>
-                 <td  >
-                    {{dataset.tamañoDataSet}}
-                </td>
-
-                <td>
-                    <a class="btn btn-success btn-sm col-xl-6" href="{%url ''}">Ver</a>
-                </td>
-            </tr>
-
-            {%endfor%}
-
-        </form>
-        </tbody>
-    </table>
-       <div style="padding-bottom:50px">
-
-        <td >
-                    <a  class="btn btn-success btn-sm col-xl-2" href="{%url ''}">Agregar</a>
-        </td>
- </div>
-
-{%endblock%}
-</form>
+{% endblock %}

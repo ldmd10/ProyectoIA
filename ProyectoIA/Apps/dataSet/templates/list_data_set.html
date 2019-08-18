@@ -3,73 +3,74 @@ from tkinter import *
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static 'Includes/bootstrap/css/bootstrap.min.css' %}">
 
-{%block Header%}
+{% block Header %}
 
-        <div class="container d-flex align-items-center flex-column">
+    <div class="container d-flex align-items-center flex-column">
 
-            <!-- Masthead Avatar Image -->
-            <img class="col-xl-2" src="{% static 'img/avataaars.svg' %}" alt="">
+        <!-- Masthead Avatar Image -->
+        <img class="col-xl-2" src="{% static 'img/avataaars.svg' %}" alt="">
 
-            <!-- Masthead Heading -->
-            <h1 class="masthead-heading text-uppercase mb-0">IA DataSet</h1>
+        <!-- Masthead Heading -->
+        <h1 class="masthead-heading text-uppercase mb-0">IA DataSet</h1>
 
-            <!-- Icon Divider -->
+        <!-- Icon Divider -->
 
-        </div>
+    </div>
 
-{%endblock%}
+{% endblock %}
 
-{%block content%}
-<div class="container">
-    <table class="table">
-        <thead>
-        <tr>
-            <th >
-                Nombre
-            </th>
-            <th>
-                Tipo
-            </th>
-             <th >
-                Tamaño
-            </th>
-            <th></th>
-
-        </tr>
-        </thead>
-
-
- <tbody>
-        <form method="get">
-            {%csrf_token%}
-            {% for dataset in object_list %}
+{% block content %}
+    <div class="container">
+        <table class="table">
+            <thead>
             <tr>
-                <td >
-                    {{dataset.nombreDataSet}}
-                </td>
-                <td>
-                    {{dataset.tipoDataSet}}
-                </td>
-                 <td  >
-                    {{dataset.tamañoDataSet}}
-                </td>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Tamaño
+                </th>
+                <th></th>
 
-                <td>
-                    <a class="btn btn-success btn-sm col-xl-6" href="">Ver</a>
-                </td>
             </tr>
+            </thead>
 
-            {%endfor%}
 
-        </form>
-        </tbody>
-    </table>
-       <div style="padding-bottom:50px">
+            <tbody>
+            <form method="get">
+                {% csrf_token %}
+                {% for dataset in object_list %}
+                    <tr>
+                        <td>
+                            {{ dataset.nombreDataSet }}
+                        </td>
+                        <td>
+                            {{ dataset.tipoDataSet }}
+                        </td>
+                        <td>
+                            {{ dataset.tamañoDataSet }}
+                        </td>
 
-        <td >
-                    <a  class="btn btn-success btn-sm col-xl-2" href="{%url 'AgregarData'%}">Agregar</a>
-        </td>
- </div>
+                        <td>
+                            <a class="btn btn-success btn-sm col-xl-6" href="">Ver</a>
+                        </td>
+                    </tr>
 
-{%endblock%}
+                {% endfor %}
 
+            </form>
+            </tbody>
+        </table>
+
+        <div style="padding-bottom:50px">
+
+            <td>
+                <a class="btn btn-success btn-sm col-xl-2" href="{% url 'AgregarData' %}">Agregar</a>
+            </td>
+        </div>
+    </div>
+
+{% endblock %}

@@ -17,7 +17,16 @@ class DataSet(models.Model):
     tipoDataSet = models.CharField(max_length=40, verbose_name="Tipo datos", choices=OPCIONES_TIPO_DATA,
                                    default=TIPO_DATA_TEXTO)
     tamañoDataSet = models.IntegerField()
-    datos = models.FileField(upload_to='Archivos/dataSet', null=True, blank=False)
+    datos = models.FileField(upload_to='Archivos/dataSet', null=True, blank=True)
 
     def __str__(self):
         return '{}'.format(self.nombreDataSet)
+
+
+class ImagenData(models.Model):
+    clase = models.CharField(max_length=50)
+    imagen = models.FileField(upload_to='Archivos/dataSet', null=True, blank=False)
+    dataSet = models.ForeignKey(DataSet, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.imagen.name

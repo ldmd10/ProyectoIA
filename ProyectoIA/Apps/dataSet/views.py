@@ -4,6 +4,8 @@ from django.views.generic.edit import CreateView
 from django.views.generic import ListView
 from Apps.dataSet.models import DataSet
 from Apps.dataSet.forms import AgregarDataSet
+from django.utils import timezone
+from django.views.generic.detail import DetailView
 
 
 # Create your views here.
@@ -12,27 +14,14 @@ class ListarData(ListView):
     template_name = 'list_data_set.html'
 
 
-class AgregarData(CreateView):
-    # model = DataSet
-    form_class = AgregarDataSet
-    template_name = 'agregar_data_set.html'
-    success_url = 'AgregarArchivo'
+class DataSetDetalle(DetailView):
+    model = DataSet
+    template_name = 'dataset_detail.html'
 
-    def post(self, request, *args, **kwargs):
-        form_class = self.get_form_class()
-        form = self.get_form(form_class)
-        files = request.FILES.getlist('datos')
-        nombreDataSet = request.POST.get("nombreDataSet")
-        tipoDataSet = request.POST.get("tipoDataSet")
-        tamañoDataSet = request.POST.get("tamañoDataSet")
-
-        if form.is_valid():
-            print(DataSet.objects.all().count())
-            for f in files:
-                print()
-            return self.form_valid(form)
-        else:
-            return self.form_invalid(form)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+        return context
 
 
 def vewAgregarDataSet(request):
@@ -42,6 +31,7 @@ def vewAgregarDataSet(request):
         nombreDataSet = request.POST.get("nombreDataSet")
         tipoDataSet = request.POST.get("tipoDataSet")
         tamañoDataSet = request.POST.get("tamañoDataSet")
+        claseData = request.POST.get("claseDataSet")
         if form.is_valid():
             dataSetNuevo = DataSet(
                 nombreDataSet=nombreDataSet,
@@ -51,8 +41,7 @@ def vewAgregarDataSet(request):
 
             if tipoDataSet == "imagen":
                 for f in files:
-                    dataSetNuevo.imagendata_set. \
-                        create(clase="Carro", imagen=f)
+                    dataSetNuevo.imagendata_set.create(clase=claseData, imagen=f)
             else:
                 dataSetNuevo.datos = files.__getitem__(0)
             dataSetNuevo.save()
@@ -60,7 +49,7 @@ def vewAgregarDataSet(request):
 
             # form.save()
 
-            return redirect('index')
+            return redirect('ListarData')
     else:
         form = AgregarDataSet()
     return render(request, 'agregar_data_set.html', {'form': form})

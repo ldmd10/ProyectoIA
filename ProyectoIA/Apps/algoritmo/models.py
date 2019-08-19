@@ -48,7 +48,7 @@ class Algoritmo(models.Model):
 class Entrenamiento(models.Model):
     idEntrenamiento = models.AutoField(primary_key=True, null=False, max_length=10)
     tituloEntrenamiento = models.CharField(max_length=80, verbose_name="Titulo entrenamiento")
-    foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=False, on_delete=models.CASCADE, verbose_name="Algoritmo")
+    foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE, verbose_name="Algoritmo")
     foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
     tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
 

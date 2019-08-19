@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Includes/bootstrap/css/bootstrap.min.css' %}">
+
+{% block Header %}
+
+    <div class="container d-flex align-items-center flex-column">
+
+
+        <!-- Masthead Heading -->
+        <h1 class="masthead-heading text-uppercase mb-0" style="padding-top: 100px">{{ dataset.nombreDataSet }}</h1>
+        <!-- Icon Divider -->
+
+    </div>
+
+{% endblock %}
+{% block content %}
+    <div class="card-body mb-5">
+    <div class="row">
+        <div class="col-xl-5 mx-auto">
+            {% if dataset.tipoDataSet == dataset.TIPO_DATA_IMAGEN %}
+                <div class="container">
+                <div class="form-group">
+                    <div class="container">
+                        <label>Tipo :</label>
+                        <input class="md-textarea form-control " value="{{ dataset.tipoDataSet }}"
+                               readonly="readonly">
+
+                        <label>Clase :</label>
+                        <input class="md-textarea form-control " value="{{ dataset.imagendata_set.first.clase }}"
+                               readonly="readonly">
+                    </div>
+                    <h1 style="padding-top: 20px">Datos:
+                        <div class="row">
+                            {% for imagenFile in dataset.imagendata_set.all %}
+                                <div class="col-sm-4">
+                                    <div class="bg-img">
+                                        <img src="{{ imagenFile.imagen.url }}"
+                                             alt="{{ imagenFile.pk }}"
+                                             class="img-fluid" alt="Background Image"/>
+
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                        </div>
+                    </h1>
+
+                </div>
+            {% endif %}
+            {% if not dataset.tipoDataSet == dataset.TIPO_DATA_IMAGEN %}
+                <div class="container">
+                    <h3>Descargar :
+                        <a href="{{ dataset.getURL }}" class="btn btn-info btn-lg"
+                           download="{{ dataset.datos.url }}">
+                            <span class="glyphicon glyphicon-save">{{ dataset.getURL }}</span>
+
+                        </a>
+                    </h3>
+
+
+                    <div class="form-group">
+                        <div class="container">
+                            <label>Tipo :</label>
+                            <input class="md-textarea form-control " value="{{ dataset.tipoDataSet }}"
+                                   readonly="readonly">
+                        </div>
+
+
+                        <div class="container" style="padding-top: 20px">
+                            <label for="exampleFormControlTextarea1">Data: </label>
+                            <textarea class="form-control-file " readonly="readonly"
+                                      id="exampleFormControlTextarea1"
+                                      style="text-align: left"
+                                      rows="15">
+                                    {{ dataset.dataArchivo }}
+                                </textarea>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            {% endif %}
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

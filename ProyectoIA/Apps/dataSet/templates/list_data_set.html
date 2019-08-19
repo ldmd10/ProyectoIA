@@ -1,4 +1,3 @@
-from tkinter import *
 {% extends "base.html" %}
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static 'Includes/bootstrap/css/bootstrap.min.css' %}">
@@ -55,7 +54,8 @@ from tkinter import *
                         </td>
 
                         <td>
-                            <a class="btn btn-success btn-sm col-xl-6" href="">Ver</a>
+                            <a class="btn btn-success btn-sm col-xl-6"
+                               href="{% url 'dataset_detalle' dataset.idDataSet %}">Ver</a>
                         </td>
                     </tr>
 

@@ -1,7 +1,9 @@
 from django.db import models
 from Apps.dataSet.models import DataSet
 from Apps.algoritmo.Clases.Kmeans import kmeans
-from Apps.algoritmo.Clases.Kmeans import leerDatos
+from Apps.algoritmo.Clases.Apriori import Apriori
+from Apps.algoritmo.Clases.FpGrowth import fpGrowth
+from Apps.algoritmo.Clases.UtilsArchivos import leerDatos
 
 
 # Create your models here.
@@ -45,12 +47,13 @@ class Algoritmo(models.Model):
 
 
 class Entrenamiento(models.Model):
+    '''Esta clase va ser exlusiva para kmeans y knn o similares'''
     idEntrenamiento = models.AutoField(primary_key=True, null=False, max_length=10)
     tituloEntrenamiento = models.CharField(max_length=80, verbose_name="Titulo entrenamiento")
     foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE, verbose_name="Algoritmo")
     foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
     tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
-    k = models.IntegerField(null=False)
+    k = models.IntegerField(null=True)
 
     def __str__(self):
         return '{}'.format(self.tituloEntrenamiento)
@@ -63,6 +66,33 @@ class Entrenamiento(models.Model):
             salida = "\n" + "k =" + str(
                 k) + "\n" + seguimiento + "\n" + "--------------------------------------Grupos--------------------------------------" + "\n" + grupos
             return salida
+
+
+class AlgoritmoReglas(models.Model):
+    minSuport = models.FloatField(null=True)
+    minConfianza = models.FloatField(null=True)
+    tamañoCondicion = models.IntegerField(null=True)
+    tamañoPredicado = models.IntegerField(null=True)
+    minimoFrecuencia = models.IntegerField(null=True)
+    foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE, verbose_name="Algoritmo")
+    foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
+    tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
+
+    def ejecutarAlgoritmo(self):
+        if self.foraneaAlgoritmo.nombreAlgoritmo == "Apriori":
+            datosInput = leerDatos(self.foraneaDataSet.datos.url)
+            print("---------------------")
+            print(datosInput)
+            salida = Apriori(datosInput)
+            print(salida)
+            return str(salida)
+        if self.foraneaAlgoritmo.nombreAlgoritmo == "FpGrowth":
+            datosInput = leerDatos(self.foraneaDataSet.datos.url)
+            print("---------------------")
+            print(datosInput)
+            salida = fpGrowth(datosInput)
+            print(salida)
+            return str(salida)
 
 
 class Ejecucion(models.Model):

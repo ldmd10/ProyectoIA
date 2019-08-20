@@ -31,7 +31,16 @@
                                   id="exampleFormControlTextarea1"
                                   style="text-align: left"
                                   rows="15">
-                            {{ entrenamiento.ejecutarAlgoritmo }}
+                        {{ algoritmo.nombreAlgoritmo }}
+                            {% if algoritmo.nombreAlgoritmo == "Apriori" %}
+                                {{ apriori.ejecutarAlgoritmo }}
+                            {% endif %}
+                            {% if algoritmo.nombreAlgoritmo == "Kmeans" %}
+                                {{ entrenamiento.ejecutarAlgoritmo }}
+                            {% endif %}
+                            {% if algoritmo.nombreAlgoritmo == "FpGrowth" %}
+                                {{ fp.ejecutarAlgoritmo }}
+                            {% endif %}
                                 </textarea>
                     </div>
                 </form>

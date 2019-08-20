@@ -38,7 +38,6 @@ def vewAgregarDataSet(request):
                 tipoDataSet=tipoDataSet,
                 tamañoDataSet=tamañoDataSet)
             dataSetNuevo.save()
-
             if tipoDataSet == "imagen":
                 for f in files:
                     dataSetNuevo.imagendata_set.create(clase=claseData, imagen=f)

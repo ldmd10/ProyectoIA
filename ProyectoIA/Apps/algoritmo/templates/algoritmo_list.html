@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'Includes/bootstrap/css/bootstrap.min.css' %}">
+
+{% block Header %}
+
+    <div class="container d-flex align-items-center flex-column">
+
+        <!-- Masthead Avatar Image -->
+        <img class="col-xl-2" src="{% static 'img/avataaars.svg' %}" alt="">
+
+        <!-- Masthead Heading -->
+        <h1 class="masthead-heading text-uppercase mb-0">Algoritmos</h1>
+
+        <!-- Icon Divider -->
+
+    </div>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Descripción
+                </th>
+                <th>
+                    Acción
+                </th>
+            </tr>
+            </thead>
+
+
+            <tbody>
+            <form method="get">
+                {% csrf_token %}
+                {% for algoritmo in object_list %}
+                    <tr>
+                        <td>
+                            {{ algoritmo.nombreAlgoritmo }}
+                        </td>
+                        <td>
+                            {{ algoritmo.tipo }}
+                        </td>
+                        <td>
+                            {{ algoritmo.descripcion }}
+                        </td>
+                        <td>
+                            <a class="btn btn-success btn-sm col-xl-6"
+                               href="{% url  'ejecucionConf' algoritmo.pk %}">conf</a>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+
+            </form>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
+

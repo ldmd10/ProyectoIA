@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProyectoIA/static/img/archivoIcon.png" afterDir="false" />
+    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="Se agrego la vista para que se puedan visualizar los data set, falta que las imagenes se carguen bien">
+      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_cluster.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0002_auto_20190807_1244.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0003_entrenamiento.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0004_entrenamiento_rutaarchivo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0005_auto_20190807_2324.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0006_auto_20190807_2334.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0007_remove_ejecucion_foraneaentrenamiento.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0008_ejecucion_foraneaentrenamiento.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0009_auto_20190808_0003.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/migrations/0010_auto_20190808_2256.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/dataSet/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/dataSet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/dataSet/templates/list_data_set.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/templates/list_data_set.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/dataSet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/Kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo/algoritmo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/ejecucion/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/entrenamiento/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/dataSet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoIA/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoIA/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,10 +40,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/dataSet/forms.py">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_cluster.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="195">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#204#229#0#HTML" expanded="true" />
+                <element signature="e#1167#1192#0#HTML" expanded="true" />
+                <element signature="e#1442#1466#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -60,74 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/forms/widgets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="287" selection-start-line="287" selection-end-line="287" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/dataSet/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/dataSet/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Archivos/dataSet/kmfq.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="136">
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -136,10 +78,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProyectoIA/templates/home.html">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/Kmeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="100" column="52" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="89" />
+            <state relative-caret-position="217">
+              <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/dataSet/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/dataSet/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,8 +125,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/list_data_set.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="194">
+              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="66" column="55" selection-start-line="65" selection-start-column="27" selection-end-line="66" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -165,8 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>apps</find>
-      <find>apl</find>
       <find>root</find>
       <find>link</find>
       <find>LA in</find>
@@ -190,8 +175,13 @@
       <find>scri</find>
       <find>scrip</find>
       <find>path</find>
-      <find>img</find>
       <find>for</find>
+      <find>img</find>
+      <find>area</find>
+      <find>conf</find>
+      <find>ver</find>
+      <find>configu</find>
+      <find>ingrese k</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,9 +201,6 @@
         <option value="$PROJECT_DIR$/ProyectoIA/templates/base.html.py" />
         <option value="$PROJECT_DIR$/ProyectoIA/views.py" />
         <option value="$PROJECT_DIR$/ProyectoIA/templates/index.html" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/forms.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/views.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/urls.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo/algoritmo_list.html" />
         <option value="$PROJECT_DIR$/ProyectoIA/urls.py" />
         <option value="$PROJECT_DIR$/ProyectoIA/templates/home.html" />
@@ -223,13 +210,20 @@
         <option value="$PROJECT_DIR$/Apps/dataSet/templates/data_set_detalle.html" />
         <option value="$PROJECT_DIR$/Apps/dataSet/urls.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/templates/list_data_set.html" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
         <option value="$PROJECT_DIR$/Archivos/dataSet/kmfq.txt" />
         <option value="$PROJECT_DIR$/ProyectoIA/settings.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/models.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/forms.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/views.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/urls.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/Kmenas.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo_list.html" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/Kmeans.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/forms.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_cluster.html" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/views.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
       </list>
     </option>
   </component>
@@ -261,7 +255,34 @@
               <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
               <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+              <item name="Clases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
               <item name="dataSet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSet" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,9 +301,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\templates" />
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\templates\base" />
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA" />
-      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\templates" />
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -305,7 +326,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.models">
+  <component name="RunManager" selected="Python.Kmeans">
+    <configuration name="Kmeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProyectoIA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Apps/algoritmo/Clases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Apps/algoritmo/Clases/Kmeans.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProyectoIA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -353,6 +396,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Kmeans" />
         <item itemvalue="Python.models" />
       </list>
     </recent_temporary>
@@ -379,7 +423,7 @@
       <workItem from="1566048012049" duration="9800000" />
       <workItem from="1566097186026" duration="7231000" />
       <workItem from="1566139175404" duration="8208000" />
-      <workItem from="1566163498677" duration="40960000" />
+      <workItem from="1566163498677" duration="57520000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego el modelo entrenamiento">
       <created>1565212732444</created>
@@ -479,11 +523,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566202495924</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Se agrego la vista para que se puedan visualizar los data set, falta que las imagenes se carguen bien">
+      <created>1566241966178</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1566241966178</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119499000" />
+    <option name="totallyTimeSpent" value="136059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,8 +562,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.34042552" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.60392797" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.38625205" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -521,7 +572,7 @@
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5400314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33751962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -530,12 +581,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.6777409" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.3089701" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -561,19 +612,14 @@
     <MESSAGE value="Se agregaron forms y una vista para listar algortimos" />
     <MESSAGE value="Se arreglo la vista para crear nuevos dataset" />
     <MESSAGE value="Se agrego la carga de multiples imagenes :p :p :p :p :p" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrego la carga de multiples imagenes :p :p :p :p :p" />
+    <MESSAGE value="Se agrego la vista para que se puedan visualizar los data set, falta que las imagenes se carguen bien" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego la vista para que se puedan visualizar los data set, falta que las imagenes se carguen bien" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProyectoIA$Kmeans.coverage" NAME="Kmeans Coverage Results" MODIFIED="1566264131927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$models.coverage" NAME="models Coverage Results" MODIFIED="1565210603684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algoritmo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProyectoIA/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/base/base.html" />
-    <entry file="file://$PROJECT_DIR$/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/base/static/css/creative.min.css" />
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/base/base.html" />
     <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/ProyectoIA/static/img/undraw_posting_photo.svg" />
@@ -602,42 +648,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProyectoIA/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo/algoritmo_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProyectoIA/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -689,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/list_data_set.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/kmfq.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -707,13 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/agregar_data_set.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -729,16 +725,6 @@
         <state relative-caret-position="-51" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/gallery/20170216_182115.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -747,7 +733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="250">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
         </state>
       </provider>
@@ -761,40 +747,134 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/dataSet/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="289">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/agregar_data_set.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/Kmenas.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/dataSet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/list_data_set.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="66" column="55" selection-start-line="65" selection-start-column="27" selection-end-line="66" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/dataSet/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        <state relative-caret-position="517">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/dataSet/models.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="131">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html">
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_cluster.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="195">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#204#229#0#HTML" expanded="true" />
+            <element signature="e#1167#1192#0#HTML" expanded="true" />
+            <element signature="e#1442#1466#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/760438455/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="1086" column="8" selection-start-line="1086" selection-start-column="8" selection-end-line="1086" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/Kmeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

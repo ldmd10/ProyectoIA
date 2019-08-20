@@ -1,5 +1,7 @@
 from django.db import models
 from Apps.dataSet.models import DataSet
+from Apps.algoritmo.Clases.Kmeans import kmeans
+from Apps.algoritmo.Clases.Kmeans import leerDatos
 
 
 # Create your models here.
@@ -19,9 +21,6 @@ class Algoritmo(models.Model):
 
     def __str__(self):
         return '{}'.format(self.nombreAlgoritmo)
-
-    def ejecutarAlgoritmo(self):
-        print("Corriendo algoritmo...")
 
     def entrenarAlgoritmo(self):
         print("Entrenando algoritmo..")
@@ -51,9 +50,19 @@ class Entrenamiento(models.Model):
     foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE, verbose_name="Algoritmo")
     foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
     tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
+    k = models.IntegerField(null=False)
 
     def __str__(self):
         return '{}'.format(self.tituloEntrenamiento)
+
+    def ejecutarAlgoritmo(self):
+        if self.foraneaAlgoritmo.nombreAlgoritmo == "Kmeans":
+            k = int(0 if self.k is None else self.k)
+            datosInput = leerDatos(self.foraneaDataSet.datos.url)
+            seguimiento, grupos = kmeans(datosInput, k)
+            salida = "\n" + "k =" + str(
+                k) + "\n" + seguimiento + "\n" + "--------------------------------------Grupos--------------------------------------" + "\n" + grupos
+            return salida
 
 
 class Ejecucion(models.Model):

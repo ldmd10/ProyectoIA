@@ -95,6 +95,14 @@ class AlgoritmoReglas(models.Model):
             return str(salida)
 
 
+class Id3(models.Model):
+    foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE)
+    foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
+    tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
+    tiempoEjecucion = models.TimeField(null=False)
+    ####cmk
+
+
 class Ejecucion(models.Model):
     idEjecucion = models.AutoField(primary_key=True, max_length=10)
     tituloEjecucion = models.CharField(max_length=80)

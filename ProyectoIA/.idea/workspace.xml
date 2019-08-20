@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/FpGrowth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_cluster.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+            <state relative-caret-position="390">
+              <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -92,11 +86,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/FpGrowth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#4#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/nodo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -191,8 +206,9 @@
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_cluster.html" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/views.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/FpGrowth.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
       </list>
     </option>
   </component>
@@ -232,6 +248,14 @@
               <item name="Apps" type="462c0819:PsiDirectoryNode" />
               <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
               <item name="Clases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+              <item name="Clases" type="462c0819:PsiDirectoryNode" />
+              <item name="id3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
@@ -454,7 +478,7 @@
       <workItem from="1566048012049" duration="9800000" />
       <workItem from="1566097186026" duration="7231000" />
       <workItem from="1566139175404" duration="8208000" />
-      <workItem from="1566163498677" duration="75179000" />
+      <workItem from="1566163498677" duration="76021000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego el modelo entrenamiento">
       <created>1565212732444</created>
@@ -568,11 +592,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566268209000</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Se añadio FpGrowth y Apriori a la interfaz">
+      <created>1566287679578</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1566287679578</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153718000" />
+    <option name="totallyTimeSpent" value="154560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,12 +618,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120272316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31751227" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3255814" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32225913" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -652,7 +683,8 @@
     <MESSAGE value="Se agrego la carga de multiples imagenes :p :p :p :p :p" />
     <MESSAGE value="Se agrego la vista para que se puedan visualizar los data set, falta que las imagenes se carguen bien" />
     <MESSAGE value="Se termino kmeans con visualización" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se termino kmeans con visualización" />
+    <MESSAGE value="Se añadio FpGrowth y Apriori a la interfaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añadio FpGrowth y Apriori a la interfaz" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoIA$knn.coverage" NAME="knn Coverage Results" MODIFIED="1566278500524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
@@ -662,20 +694,6 @@
     <SUITE FILE_PATH="coverage/ProyectoIA$models.coverage" NAME="models Coverage Results" MODIFIED="1565210603684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algoritmo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProyectoIA/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#634#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProyectoIA/static/img/portfolio/cabin.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Archivos/dataSet/2014-ford-fiesta-st-hatchback-angular-front.png" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/2016-Range-Rover-Evoque-side.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/1.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/WBY2Z6C55KVG97746-d.jpg" />
@@ -905,16 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-116">
@@ -932,20 +940,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+        <state relative-caret-position="357">
+          <caret line="80" column="29" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="29" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/FpGrowth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="119">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/nodo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#4#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

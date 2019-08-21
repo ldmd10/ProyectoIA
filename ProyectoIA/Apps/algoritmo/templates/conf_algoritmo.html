@@ -22,27 +22,42 @@
                     {% endfor %}
 
                     <div class="text-center py-4">
-                        <button class="btn btn-outline-success waves-effect btn-rounded" type="submit">Ejecutar</button>
-                        <a class="btn btn-outline-danger waves-effect btn-rounded" href="{% url 'index' %}">Cancelar</a>
-                    </div>
-                    <div class="container" style="padding-top: 20px">
-                        <label for="exampleFormControlTextarea1">Salida: </label>
-                        <textarea class="form-control-file " readonly="readonly"
-                                  id="exampleFormControlTextarea1"
-                                  style="text-align: left"
-                                  rows="15">
+                        {% if  not algoritmo.nombreAlgoritmo == "Id3" %}
+                            <button class="btn btn-outline-success waves-effect btn-rounded" type="submit">Ejecutar
+                            </button>
+                            <a class="btn btn-outline-danger waves-effect btn-rounded"
+                               href="{% url 'index' %}">Cancelar</a>
+                            <div class="container" style="padding-top: 20px">
+                                <label for="exampleFormControlTextarea1">Salida: </label>
+                                <textarea class="form-control-file " readonly="readonly"
+                                          id="exampleFormControlTextarea1"
+                                          style="text-align: left"
+                                          rows="15">
                         {{ algoritmo.nombreAlgoritmo }}
-                            {% if algoritmo.nombreAlgoritmo == "Apriori" %}
-                                {{ apriori.ejecutarAlgoritmo }}
-                            {% endif %}
-                            {% if algoritmo.nombreAlgoritmo == "Kmeans" %}
-                                {{ entrenamiento.ejecutarAlgoritmo }}
-                            {% endif %}
-                            {% if algoritmo.nombreAlgoritmo == "FpGrowth" %}
-                                {{ fp.ejecutarAlgoritmo }}
-                            {% endif %}
+                                    {% if algoritmo.nombreAlgoritmo == "Apriori" %}
+                                        {{ apriori.ejecutarAlgoritmo }}
+                                    {% endif %}
+                                    {% if algoritmo.nombreAlgoritmo == "Kmeans" %}
+                                        {{ entrenamiento.ejecutarAlgoritmo }}
+                                    {% endif %}
+                                    {% if algoritmo.nombreAlgoritmo == "FpGrowth" %}
+                                        {{ fp.ejecutarAlgoritmo }}
+                                    {% endif %}
                                 </textarea>
+                            </div>
+                        {% endif %}
+                        {% if  algoritmo.nombreAlgoritmo == "Id3" %}
+                            <div class="container">
+                                <button class="btn btn-outline-success waves-effect btn-rounded" type="submit">Entrenar
+                                </button>
+                                <a class="btn btn-outline-danger waves-effect btn-rounded"
+                                   href="{% url 'index' %}">Cancelar</a></div>
+
+
+                        {% endif %}
+
                     </div>
+
                 </form>
 
 

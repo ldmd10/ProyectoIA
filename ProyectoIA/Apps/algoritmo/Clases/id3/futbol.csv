@@ -1,0 +1,9 @@
+graduado_escolar,baja,no,si,abandona
+graduado_escolar,baja,si,si,abandona
+graduado_escolar,alta,si,si,termina
+bachillerato,baja,no,si,suspende
+universitario,alta,no,si,oe
+universitario,alta,si,si,termina
+universitario,alta,si,si,suspende
+universitario,alta,si,si,termina
+universitario,alta,si,si,termina

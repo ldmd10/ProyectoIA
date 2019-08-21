@@ -2,6 +2,8 @@ from django import forms
 from Apps.algoritmo.models import Algoritmo
 from Apps.algoritmo.models import Entrenamiento
 from Apps.algoritmo.models import AlgoritmoReglas
+from Apps.algoritmo.models import TestId3
+from Apps.algoritmo.models import Id3
 
 
 class FormListAlgoritmo(forms.ModelForm):
@@ -91,4 +93,45 @@ class FormConfAlgoritmoFpGrowth(forms.ModelForm):
             'foraneaDataSet': forms.Select(attrs={'class': 'form-control mdb-select colorful-select dropdown-ins'}),
             'minConfianza': forms.NumberInput(attrs={'class': 'form-control'}),
             "minimoFrecuencia": forms.NumberInput(attrs={'class': 'form-control'}),
+        }
+
+
+class FormConfAlgoritmoId3(forms.ModelForm):
+    class Meta:
+        model = Id3
+        fields = [
+            "foraneaDataSet",
+            "datoPrueba",
+
+        ]
+        labels = {
+            'foraneaDataSet': 'Seleccione dataSet',
+            'datoPrueba': 'Test',
+
+        }
+        widgets = {
+            'foraneaDataSet': forms.Select(attrs={'class': 'form-control mdb-select colorful-select dropdown-ins'}),
+            'datoPrueba': forms.ClearableFileInput(),
+        }
+
+
+class FormTestAlgoritmoId3(forms.ModelForm):
+    class Meta:
+        model = TestId3
+        fields = [
+            "tituloTest",
+            "textoPrueba",
+            "datoPrueba",
+
+        ]
+        labels = {
+            "tituloTest": "Titulo test",
+            "textoPrueba": "Entrada manual",
+            "datoPrueba": "Entrada Archivo",
+
+        }
+        widgets = {
+            'tituloTest': forms.Select(attrs={'class': 'form-control mdb-select colorful-select dropdown-ins'}),
+            "textoPrueba": forms.Textarea(attrs={'class': 'form-control'}),
+            'datoPrueba': forms.ClearableFileInput(),
         }

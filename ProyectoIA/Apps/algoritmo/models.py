@@ -100,20 +100,15 @@ class Id3(models.Model):
     foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
     tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
     tiempoEjecucion = models.TimeField(null=False)
-    ####cmk
-
-
-class Ejecucion(models.Model):
-    idEjecucion = models.AutoField(primary_key=True, max_length=10)
-    tituloEjecucion = models.CharField(max_length=80)
-    foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE)
-    foraneaEntrenamiento = models.ForeignKey(Entrenamiento, null=True, on_delete=models.CASCADE)
     datoPrueba = models.FileField(upload_to='Archivos/Prueba', null=True, blank=False)
-    tiempoEjecucion = models.TimeField(null=False)
+
+
+class TestId3(models.Model):
+    tituloTest = models.CharField(max_length=80)
+    foraneaId3 = models.ForeignKey(Id3, null=True, on_delete=models.CASCADE, verbose_name="Id3")
+    textoPrueba = models.TextField(max_length=500, null=True)
+    datoPrueba = models.FileField(upload_to='Archivos/Prueba', null=True, blank=True)
 
     @property
     def filename(self):
         return self.datoPrueba.name.rsplit('/', 1)[-1]
-
-    def __str__(self):
-        return '{}'.format(self.tituloEjecucion)

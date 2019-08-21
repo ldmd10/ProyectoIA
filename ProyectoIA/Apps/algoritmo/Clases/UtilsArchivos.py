@@ -9,10 +9,3 @@ def leerDatos(ruta):
     return datosInput
 
 
-def leerCsv(ruta):
-    salida = "\n"
-    with open(ruta, newline='') as File:
-        reader = csv.reader(File)
-        for row in reader:
-            salida = salida + str(row) + "\n"
-    return salida

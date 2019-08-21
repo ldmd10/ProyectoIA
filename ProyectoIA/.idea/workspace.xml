@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="Se agrego el modelo para id3, se creo el formulario y la vista para la configuracion y entrenamiento de id3 y se empezo a crear un modelo testId3 y su formulario">
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/migrations/0001_initial.py" afterDir="false" />
+    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/dataSet/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/dataSet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="121" column="57" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+            <state relative-caret-position="51">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -53,10 +43,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="169">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -67,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+            <state relative-caret-position="935">
+              <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -76,14 +90,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+            <state relative-caret-position="136">
+              <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#819#1929#0" />
                 <element signature="e#1985#3238#0" />
                 <element signature="e#3338#4286#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Archivos/dataSet/dataSetKnn.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -112,7 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LA in</find>
       <find>port</find>
       <find>im</find>
       <find>src</find>
@@ -142,6 +163,7 @@
       <find>for</find>
       <find>form</find>
       <find>fpgro</find>
+      <find>prin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,7 +198,6 @@
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/Kmenas.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo_list.html" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/Kmeans.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py" />
         <option value="$PROJECT_DIR$/Archivos/dataSet/data_set_reglas_prueba_RubOqFJ.txt" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/datasetApri.txt" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py" />
@@ -190,16 +211,19 @@
         <option value="$PROJECT_DIR$/Apps/dataSet/admin.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/admin.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/forms.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/views.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/views.py" />
+        <option value="$PROJECT_DIR$/Archivos/dataSet/dataSetKnn.txt" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -237,21 +261,13 @@
             <path>
               <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
-              <item name="Apps" type="462c0819:PsiDirectoryNode" />
-              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
-              <item name="Apps" type="462c0819:PsiDirectoryNode" />
-              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Archivos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
               <item name="Archivos" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,25 +280,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\Clases\id3" />
-      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA\static\img" />
-      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA\templates" />
-      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA\static" />
-      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\dataSet\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\Clases" />
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\templates" />
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\templates\base" />
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA" />
       <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\Clases" />
+      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\Apps\algoritmo\Clases\id3" />
+      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA\static\img" />
+      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA\templates" />
+      <recent name="C:\Users\LuisDavid102\Documents\ProyectoIA\ProyectoIA\ProyectoIA\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -297,29 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="Apriori" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ProyectoIA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Apps/algoritmo/Clases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.UtilsArchivos">
     <configuration name="FpGrowth" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProyectoIA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -356,6 +350,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UtilsArchivos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProyectoIA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Apps/algoritmo/Clases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -433,11 +449,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.UtilsArchivos" />
+        <item itemvalue="Python.knn" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.ID3_C" />
         <item itemvalue="Python.FpGrowth" />
-        <item itemvalue="Python.Apriori" />
-        <item itemvalue="Python.knn" />
       </list>
     </recent_temporary>
   </component>
@@ -465,7 +481,7 @@
       <workItem from="1566139175404" duration="8208000" />
       <workItem from="1566163498677" duration="76058000" />
       <workItem from="1566322930533" duration="1478000" />
-      <workItem from="1566343577805" duration="17875000" />
+      <workItem from="1566343577805" duration="26847000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego el modelo entrenamiento">
       <created>1565212732444</created>
@@ -600,11 +616,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566351485612</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Se organizo totalmente id3">
+      <created>1566363163260</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1566363163260</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Se implemento kmeans">
+      <created>1566370009050</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1566370009050</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173950000" />
+    <option name="totallyTimeSpent" value="182922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -619,12 +649,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3255814" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3878887" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45826513" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -633,7 +663,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.60392797" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.2569558" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.44517186" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -687,19 +717,21 @@
     <MESSAGE value="Se añadio FpGrowth y Apriori a la interfaz" />
     <MESSAGE value="Creando el modelo para el id3" />
     <MESSAGE value="Se agrego el modelo para id3, se creo el formulario y la vista para la configuracion y entrenamiento de id3 y se empezo a crear un modelo testId3 y su formulario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrego el modelo para id3, se creo el formulario y la vista para la configuracion y entrenamiento de id3 y se empezo a crear un modelo testId3 y su formulario" />
+    <MESSAGE value="Se organizo totalmente id3" />
+    <MESSAGE value="Se implemento kmeans" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implemento kmeans" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProyectoIA$knn.coverage" NAME="knn Coverage Results" MODIFIED="1566278500524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$ID3_C.coverage" NAME="ID3_C Coverage Results" MODIFIED="1566345687568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
-    <SUITE FILE_PATH="coverage/ProyectoIA$main.coverage" NAME="main Coverage Results" MODIFIED="1566360274422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
+    <SUITE FILE_PATH="coverage/ProyectoIA$knn.coverage" NAME="knn Coverage Results" MODIFIED="1566368921649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
+    <SUITE FILE_PATH="coverage/ProyectoIA$UtilsArchivos.coverage" NAME="UtilsArchivos Coverage Results" MODIFIED="1566372055886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
+    <SUITE FILE_PATH="coverage/ProyectoIA$main.coverage" NAME="main Coverage Results" MODIFIED="1566364073617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
     <SUITE FILE_PATH="coverage/ProyectoIA$FpGrowth.coverage" NAME="FpGrowth Coverage Results" MODIFIED="1566287436743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$Kmeans.coverage" NAME="Kmeans Coverage Results" MODIFIED="1566264131927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$Apriori.coverage" NAME="Apriori Coverage Results" MODIFIED="1566284868502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$models.coverage" NAME="models Coverage Results" MODIFIED="1565210603684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algoritmo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Archivos/dataSet/20170216_182128.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/20170307_172810.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/189819_3351345960931_526113078_n.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/292670_2460766056990_1014750915_n.jpg" />
@@ -830,16 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/data_set_reglas_prueba_RubOqFJ.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -849,16 +871,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/datasetApri.txt" />
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_reglas.html" />
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -967,19 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#819#1929#0" />
-            <element signature="e#1985#3238#0" />
-            <element signature="e#3338#4286#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -990,29 +989,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html">
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="51">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py">
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="935">
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#1985#3238#0" />
+            <element signature="e#3338#4286#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Archivos/dataSet/dataSetKnn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="121" column="57" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+        <state relative-caret-position="118">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,7 @@
 from django.db import models
 from Apps.dataSet.models import DataSet
 from Apps.algoritmo.Clases.Kmeans import kmeans
+from Apps.algoritmo.Clases.knn import knn
 from Apps.algoritmo.Clases.Apriori import Apriori
 from Apps.algoritmo.Clases.FpGrowth import fpGrowth
 from Apps.algoritmo.Clases.id3.main import id3
@@ -68,6 +69,11 @@ class Entrenamiento(models.Model):
             salida = "\n" + "k =" + str(
                 k) + "\n" + seguimiento + "\n" + "--------------------------------------Grupos--------------------------------------" + "\n" + grupos
             return salida
+        if self.foraneaAlgoritmo.nombreAlgoritmo == "Knn":
+            k = int(0 if self.k is None else self.k)
+            datosInput = leerDatos(self.foraneaDataSet.datos.url)
+            salidaknn = knn(datosInput, k)
+            return salidaknn
 
 
 class AlgoritmoReglas(models.Model):

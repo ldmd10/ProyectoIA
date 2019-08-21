@@ -21,7 +21,7 @@ class ListarAlgoritmos(ListView):
 
 def viewConfEjecucion(request, pkAlgoritmo):
     algoritmo = Algoritmo.objects.get(id=pkAlgoritmo)
-    if algoritmo.nombreAlgoritmo == "Kmeans":
+    if algoritmo.nombreAlgoritmo == "Kmeans" or algoritmo.nombreAlgoritmo == "Knn":
         if (request.method == 'POST'):
             form = FormConfAlgoritmoCluster(request.POST)
             tituloEntrenamiento = request.POST.get("tituloEntrenamiento")
@@ -37,6 +37,7 @@ def viewConfEjecucion(request, pkAlgoritmo):
                                                    foraneaDataSet=dataSetSeleccionado,
                                                    foraneaAlgoritmo=algoritmo, k=k)
                 entrenamientoNuevo.save()
+                print("oooooooooooooooooooooooocdvmk")
                 return render(request, 'conf_algoritmo.html',
                               {'form': form, 'algoritmo': algoritmo, 'entrenamiento': entrenamientoNuevo,
                                'apriori': None, 'fp': None})

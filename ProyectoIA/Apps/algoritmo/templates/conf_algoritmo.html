@@ -50,7 +50,7 @@
                             {% if algoritmo.nombreAlgoritmo == "Apriori" %}
                                 {{ apriori.ejecutarAlgoritmo }}
                             {% endif %}
-                            {% if algoritmo.nombreAlgoritmo == "Kmeans" %}
+                            {% if algoritmo.nombreAlgoritmo == "Kmeans" or algoritmo.nombreAlgoritmo == "Knn" %}
                                 {{ entrenamiento.ejecutarAlgoritmo }}
                             {% endif %}
                             {% if algoritmo.nombreAlgoritmo == "FpGrowth" %}

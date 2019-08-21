@@ -12,7 +12,7 @@
     <div class="card-body mb-5">
         <div class="row">
             <div class="col-xl-5 mx-auto">
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         <div class="md-form mb-0" style="padding-top: 15px">
@@ -27,28 +27,11 @@
                             </button>
                             <a class="btn btn-outline-danger waves-effect btn-rounded"
                                href="{% url 'index' %}">Cancelar</a>
-                            <div class="container" style="padding-top: 20px">
-                                <label for="exampleFormControlTextarea1">Salida: </label>
-                                <textarea class="form-control-file " readonly="readonly"
-                                          id="exampleFormControlTextarea1"
-                                          style="text-align: left"
-                                          rows="15">
-                        {{ algoritmo.nombreAlgoritmo }}
-                                    {% if algoritmo.nombreAlgoritmo == "Apriori" %}
-                                        {{ apriori.ejecutarAlgoritmo }}
-                                    {% endif %}
-                                    {% if algoritmo.nombreAlgoritmo == "Kmeans" %}
-                                        {{ entrenamiento.ejecutarAlgoritmo }}
-                                    {% endif %}
-                                    {% if algoritmo.nombreAlgoritmo == "FpGrowth" %}
-                                        {{ fp.ejecutarAlgoritmo }}
-                                    {% endif %}
-                                </textarea>
-                            </div>
                         {% endif %}
                         {% if  algoritmo.nombreAlgoritmo == "Id3" %}
                             <div class="container">
-                                <button class="btn btn-outline-success waves-effect btn-rounded" type="submit">Entrenar
+                                <button class="btn btn-outline-success waves-effect btn-rounded" type="submit">
+                                    Entrenar/Ejecutar
                                 </button>
                                 <a class="btn btn-outline-danger waves-effect btn-rounded"
                                    href="{% url 'index' %}">Cancelar</a></div>
@@ -56,6 +39,28 @@
 
                         {% endif %}
 
+                    </div>
+                    <div class="container" style="padding-top: 20px">
+                        <label for="exampleFormControlTextarea1">Salida: </label>
+                        <textarea class="form-control-file " readonly="readonly"
+                                  id="exampleFormControlTextarea1"
+                                  style="text-align: left"
+                                  rows="15">
+                        {{ algoritmo.nombreAlgoritmo }}
+                            {% if algoritmo.nombreAlgoritmo == "Apriori" %}
+                                {{ apriori.ejecutarAlgoritmo }}
+                            {% endif %}
+                            {% if algoritmo.nombreAlgoritmo == "Kmeans" %}
+                                {{ entrenamiento.ejecutarAlgoritmo }}
+                            {% endif %}
+                            {% if algoritmo.nombreAlgoritmo == "FpGrowth" %}
+                                {{ fp.ejecutarAlgoritmo }}
+                            {% endif %}
+                            {% if algoritmo.nombreAlgoritmo == "Id3" %}
+                                {{ id3.ejecutarAlgoritmo }}
+                            {% endif %}
+
+                                </textarea>
                     </div>
 
                 </form>

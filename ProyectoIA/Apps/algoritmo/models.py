@@ -3,7 +3,9 @@ from Apps.dataSet.models import DataSet
 from Apps.algoritmo.Clases.Kmeans import kmeans
 from Apps.algoritmo.Clases.Apriori import Apriori
 from Apps.algoritmo.Clases.FpGrowth import fpGrowth
+from Apps.algoritmo.Clases.id3.main import id3
 from Apps.algoritmo.Clases.UtilsArchivos import leerDatos
+from Apps.algoritmo.Clases.UtilsArchivos import leerCsv
 
 
 # Create your models here.
@@ -95,20 +97,27 @@ class AlgoritmoReglas(models.Model):
             return str(salida)
 
 
+class DatosPrueba(models.Model):
+    clase = models.CharField(max_length=50)
+    tituloDataTest = models.CharField(max_length=50)
+    dato = models.FileField(upload_to='Archivos/Prueba', null=True, blank=False)
+
+    def __str__(self):
+        return self.tituloDataTest
+
+
 class Id3(models.Model):
     foraneaAlgoritmo = models.ForeignKey(Algoritmo, null=True, on_delete=models.CASCADE)
     foraneaDataSet = models.ForeignKey(DataSet, null=True, on_delete=models.CASCADE, verbose_name="DataSet")
     tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
-    tiempoEjecucion = models.TimeField(null=False)
-    datoPrueba = models.FileField(upload_to='Archivos/Prueba', null=True, blank=False)
+    tiempoEjecucion = models.TimeField(null=True)
+    entradaPrueba = models.ForeignKey(DatosPrueba, null=True, on_delete=models.CASCADE, verbose_name="Datos prueba")
 
+    def ejecutarAlgoritmo(self):
+        rutaEntrada = self.foraneaDataSet.datos.url
+        entradaJson = leerDatos(self.entradaPrueba.dato.url)
+        salida = id3(rutaEntrada, entradaJson)
 
-class TestId3(models.Model):
-    tituloTest = models.CharField(max_length=80)
-    foraneaId3 = models.ForeignKey(Id3, null=True, on_delete=models.CASCADE, verbose_name="Id3")
-    textoPrueba = models.TextField(max_length=500, null=True)
-    datoPrueba = models.FileField(upload_to='Archivos/Prueba', null=True, blank=True)
-
-    @property
-    def filename(self):
-        return self.datoPrueba.name.rsplit('/', 1)[-1]
+        return "Datos entrenamiento" + "\n" + leerCsv(rutaEntrada) + "\n" + \
+               " Datos prueba " + "\n" + str(entradaJson) + "\n" + \
+               "Salida " + "\n" + str(salida)

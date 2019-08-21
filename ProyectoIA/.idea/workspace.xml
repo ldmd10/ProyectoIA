@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/futbol.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/futbol_original.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html" afterDir="false" />
+    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="Se agrego el modelo para id3, se creo el formulario y la vista para la configuracion y entrenamiento de id3 y se empezo a crear un modelo testId3 y su formulario">
+      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/algoritmo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/dataSet/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/dataSet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/dataSet/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="105" column="9" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="13" />
+            <state relative-caret-position="287">
+              <caret line="121" column="57" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -51,35 +53,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#819#1929#0" />
-                <element signature="e#1985#3238#0" />
-                <element signature="e#3295#4347#0" />
-                <element signature="e#4400#5169#0" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -87,39 +67,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-              <folding>
-                <element signature="e#1282#1307#0#HTML" expanded="true" />
-                <element signature="e#1259#2310#0#HTML" />
-                <element signature="e#1573#1597#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="349">
+              <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
+        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="134" column="75" selection-start-line="134" selection-start-column="75" selection-end-line="134" selection-end-column="75" />
+            <state relative-caret-position="296">
+              <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#819#1929#0" />
+                <element signature="e#1985#3238#0" />
+                <element signature="e#3338#4286#0" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/algoritmo/tests.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="306">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -139,7 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>link</find>
       <find>LA in</find>
       <find>port</find>
       <find>im</find>
@@ -151,7 +123,6 @@
       <find>nav</find>
       <find>hea</find>
       <find>header</find>
-      <find>form</find>
       <find>Proye</find>
       <find>ac</find>
       <find>url</find>
@@ -161,7 +132,6 @@
       <find>scri</find>
       <find>scrip</find>
       <find>path</find>
-      <find>for</find>
       <find>img</find>
       <find>area</find>
       <find>ver</find>
@@ -169,6 +139,9 @@
       <find>ingrese k</find>
       <find>grupo</find>
       <find>conf</find>
+      <find>for</find>
+      <find>form</find>
+      <find>fpgro</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,7 +164,6 @@
         <option value="$PROJECT_DIR$/ProyectoIA/urls.py" />
         <option value="$PROJECT_DIR$/ProyectoIA/templates/home.html" />
         <option value="$PROJECT_DIR$/ProyectoIA/templates/base.html" />
-        <option value="$PROJECT_DIR$/Apps/dataSet/admin.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/templates/agregar_data_set.html" />
         <option value="$PROJECT_DIR$/Apps/dataSet/templates/data_set_detalle.html" />
         <option value="$PROJECT_DIR$/Apps/dataSet/urls.py" />
@@ -205,7 +177,6 @@
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/algoritmo_list.html" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/Kmeans.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" />
         <option value="$PROJECT_DIR$/Archivos/dataSet/data_set_reglas_prueba_RubOqFJ.txt" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/datasetApri.txt" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py" />
@@ -213,21 +184,22 @@
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_cluster.html" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/FpGrowth.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html" />
         <option value="$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html" />
         <option value="$PROJECT_DIR$/Apps/dataSet/models.py" />
+        <option value="$PROJECT_DIR$/Apps/dataSet/admin.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/admin.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/forms.py" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/views.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="394" />
-    <option name="y" value="-10" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -261,6 +233,13 @@
               <item name="Apps" type="462c0819:PsiDirectoryNode" />
               <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
               <item name="Clases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
@@ -486,7 +465,7 @@
       <workItem from="1566139175404" duration="8208000" />
       <workItem from="1566163498677" duration="76058000" />
       <workItem from="1566322930533" duration="1478000" />
-      <workItem from="1566343577805" duration="6227000" />
+      <workItem from="1566343577805" duration="17875000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego el modelo entrenamiento">
       <created>1565212732444</created>
@@ -614,11 +593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566288506292</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Se agrego el modelo para id3, se creo el formulario y la vista para la configuracion y entrenamiento de id3 y se empezo a crear un modelo testId3 y su formulario">
+      <created>1566351485612</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1566351485612</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162302000" />
+    <option name="totallyTimeSpent" value="173950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -633,12 +619,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1633888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3255814" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3207856" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3878887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,7 +633,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.60392797" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.29459903" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.2569558" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -656,12 +642,12 @@
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33751962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12481089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3255814" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38870433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -669,8 +655,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.3089701" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.60392797" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.28968903" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -700,19 +686,19 @@
     <MESSAGE value="Se termino kmeans con visualización" />
     <MESSAGE value="Se añadio FpGrowth y Apriori a la interfaz" />
     <MESSAGE value="Creando el modelo para el id3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creando el modelo para el id3" />
+    <MESSAGE value="Se agrego el modelo para id3, se creo el formulario y la vista para la configuracion y entrenamiento de id3 y se empezo a crear un modelo testId3 y su formulario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego el modelo para id3, se creo el formulario y la vista para la configuracion y entrenamiento de id3 y se empezo a crear un modelo testId3 y su formulario" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoIA$knn.coverage" NAME="knn Coverage Results" MODIFIED="1566278500524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$ID3_C.coverage" NAME="ID3_C Coverage Results" MODIFIED="1566345687568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
-    <SUITE FILE_PATH="coverage/ProyectoIA$main.coverage" NAME="main Coverage Results" MODIFIED="1566345752823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
+    <SUITE FILE_PATH="coverage/ProyectoIA$main.coverage" NAME="main Coverage Results" MODIFIED="1566360274422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
     <SUITE FILE_PATH="coverage/ProyectoIA$FpGrowth.coverage" NAME="FpGrowth Coverage Results" MODIFIED="1566287436743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$Kmeans.coverage" NAME="Kmeans Coverage Results" MODIFIED="1566264131927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$Apriori.coverage" NAME="Apriori Coverage Results" MODIFIED="1566284868502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases" />
     <SUITE FILE_PATH="coverage/ProyectoIA$models.coverage" NAME="models Coverage Results" MODIFIED="1565210603684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algoritmo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Archivos/dataSet/20170215_200038.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/20170216_182128.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/20170307_172810.jpg" />
     <entry file="file://$PROJECT_DIR$/Archivos/dataSet/189819_3351345960931_526113078_n.jpg" />
@@ -726,13 +712,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/dataSet/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/dataSet/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -828,16 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/dataSet/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -878,21 +847,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="338" selection-start-line="338" selection-end-line="338" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/datasetApri.txt" />
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_alg_reglas.html" />
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -928,44 +883,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="e#1282#1307#0#HTML" expanded="true" />
-            <element signature="e#1259#2310#0#HTML" />
-            <element signature="e#1573#1597#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/dataSet/templates/dataset_detail.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -974,17 +893,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/dataSet/models.py">
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/test_algoritmo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/fields/files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+        <state relative-caret-position="135">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="338" selection-start-line="338" selection-end-line="338" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/dataSet/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="105" column="18" lean-forward="true" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/dataSet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/dataSet/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -994,36 +967,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="105" column="9" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="134" column="75" selection-start-line="134" selection-start-column="75" selection-end-line="134" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+        <state relative-caret-position="296">
+          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
             <element signature="e#819#1929#0" />
             <element signature="e#1985#3238#0" />
-            <element signature="e#3295#4347#0" />
-            <element signature="e#4400#5169#0" />
+            <element signature="e#3338#4286#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="121" column="57" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

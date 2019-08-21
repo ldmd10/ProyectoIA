@@ -2,7 +2,6 @@ from django import forms
 from Apps.algoritmo.models import Algoritmo
 from Apps.algoritmo.models import Entrenamiento
 from Apps.algoritmo.models import AlgoritmoReglas
-from Apps.algoritmo.models import TestId3
 from Apps.algoritmo.models import Id3
 
 
@@ -101,21 +100,21 @@ class FormConfAlgoritmoId3(forms.ModelForm):
         model = Id3
         fields = [
             "foraneaDataSet",
-            "datoPrueba",
+            "entradaPrueba",
 
         ]
         labels = {
             'foraneaDataSet': 'Seleccione dataSet',
-            'datoPrueba': 'Test',
+            'entradaPrueba': 'Test',
 
         }
         widgets = {
             'foraneaDataSet': forms.Select(attrs={'class': 'form-control mdb-select colorful-select dropdown-ins'}),
-            'datoPrueba': forms.ClearableFileInput(),
+            'entradaPrueba': forms.Select(attrs={'class': 'form-control mdb-select colorful-select dropdown-ins'}),
         }
 
 
-class FormTestAlgoritmoId3(forms.ModelForm):
+'''class FormTestAlgoritmoId3(forms.ModelForm):
     class Meta:
         model = TestId3
         fields = [
@@ -135,3 +134,4 @@ class FormTestAlgoritmoId3(forms.ModelForm):
             "textoPrueba": forms.Textarea(attrs={'class': 'form-control'}),
             'datoPrueba': forms.ClearableFileInput(),
         }
+'''

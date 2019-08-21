@@ -24,7 +24,7 @@ SECRET_KEY = '0$&wl9_b2#=*0u3of7cn6dh9up0b#j1z1by9^=b&725na+hx83'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [['proyectoia.trida.co'],['']]
+ALLOWED_HOSTS = [['proyectoia.trida.co'], ['3.93.215.103']]
 
 # Application definition
 

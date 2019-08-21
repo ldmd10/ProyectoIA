@@ -6,7 +6,7 @@ from Apps.algoritmo.Clases.Apriori import Apriori
 from Apps.algoritmo.Clases.FpGrowth import fpGrowth
 from Apps.algoritmo.Clases.id3.main import id3
 from Apps.algoritmo.Clases.UtilsArchivos import leerDatos
-from Apps.algoritmo.Clases.UtilsArchivos import leerCsv
+
 
 
 # Create your models here.

@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/migrations/0002_auto_20190820_2319.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Apps/dataSet/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Apps/dataSet/migrations/0002_auto_20190820_2319.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoIA/static/js/Chart.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoIA/static/js/Chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoIA/static/js/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoIA/static/js/Chart.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoIA/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoIA/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+            <state relative-caret-position="254">
+              <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -232,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -266,15 +272,7 @@
               <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
               <item name="Apps" type="462c0819:PsiDirectoryNode" />
               <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
-              <item name="Clases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
-              <item name="Apps" type="462c0819:PsiDirectoryNode" />
-              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
-              <item name="Clases" type="462c0819:PsiDirectoryNode" />
-              <item name="id3" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
@@ -499,7 +497,7 @@
       <workItem from="1566163498677" duration="76058000" />
       <workItem from="1566322930533" duration="1478000" />
       <workItem from="1566343577805" duration="31911000" />
-      <workItem from="1566390835215" duration="502000" />
+      <workItem from="1566390835215" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego el modelo entrenamiento">
       <created>1565212732444</created>
@@ -697,11 +695,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566390908314</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="ajuste final&#10;conexion remota db">
+      <created>1566391457289</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1566391457289</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188488000" />
+    <option name="totallyTimeSpent" value="189468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,7 +721,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14750378" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14750378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -730,7 +735,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.60392797" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.45335516" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.45335516" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1097,8 +1102,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+        <state relative-caret-position="254">
+          <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
         </state>
       </provider>
     </entry>

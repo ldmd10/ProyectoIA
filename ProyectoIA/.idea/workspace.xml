@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoIA/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoIA/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+            <state relative-caret-position="189">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -120,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="130">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -223,17 +223,17 @@
         <option value="$PROJECT_DIR$/Archivos/dataSet/dataSetKnn.txt" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/knn.py" />
         <option value="$PROJECT_DIR$/Archivos/dataSet/KnnirisSetosa.txt" />
-        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/UtilsArchivos.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
         <option value="$PROJECT_DIR$/ProyectoIA/settings.py" />
+        <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -260,6 +260,21 @@
               <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
               <item name="Apps" type="462c0819:PsiDirectoryNode" />
               <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+              <item name="Clases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="algoritmo" type="462c0819:PsiDirectoryNode" />
+              <item name="Clases" type="462c0819:PsiDirectoryNode" />
+              <item name="id3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
@@ -491,7 +506,7 @@
       <workItem from="1566163498677" duration="76058000" />
       <workItem from="1566322930533" duration="1478000" />
       <workItem from="1566343577805" duration="31911000" />
-      <workItem from="1566390835215" duration="2951000" />
+      <workItem from="1566390835215" duration="4111000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego el modelo entrenamiento">
       <created>1565212732444</created>
@@ -745,11 +760,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566393702798</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="allowet host corregido con domain">
+      <created>1566393829419</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1566393829419</updated>
+    </task>
+    <task id="LOCAL-00038" summary="prueba id3">
+      <created>1566397334422</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1566397334422</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190937000" />
+    <option name="totallyTimeSpent" value="192097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -764,7 +793,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14750378" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14750378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -778,7 +807,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.60392797" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.45335516" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.45335516" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -814,7 +843,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se agrego el modelo entrenamiento" />
     <MESSAGE value="commit de archivos del modelo algoritmos" />
     <MESSAGE value="okgekwokgew" />
     <MESSAGE value="cambios" />
@@ -838,7 +866,9 @@
     <MESSAGE value="ajuste final&#10;conexion remota db" />
     <MESSAGE value="allowet host" />
     <MESSAGE value="allowet host corregido" />
-    <option name="LAST_COMMIT_MESSAGE" value="allowet host corregido" />
+    <MESSAGE value="allowet host corregido con domain" />
+    <MESSAGE value="prueba id3" />
+    <option name="LAST_COMMIT_MESSAGE" value="prueba id3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoIA$ID3_C.coverage" NAME="ID3_C Coverage Results" MODIFIED="1566345687568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apps/algoritmo/Clases/id3" />
@@ -1098,16 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/FpGrowth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1135,20 +1155,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py">
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        <state relative-caret-position="189">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/algoritmo/Clases/id3/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

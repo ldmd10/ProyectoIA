@@ -17,9 +17,7 @@ def id3(rutaEntrada, ruta):
          ['graduado_escolar', 'alta', 'si', 'si'], ['graduado_escolar', 'alta', 'si', 'si']]'''
 
     salida = arbol.predecir(
-        np.array([['graduado_escolar', 'alta', 'si', 'si'], ['graduado_escolar', 'alta', 'si', 'si'],
-                  ['graduado_escolar', 'alta', 'si', 'si'], ['graduado_escolar', 'alta', 'si', 'si'],
-                  ['graduado_escolar', 'alta', 'si', 'si'], ['graduado_escolar', 'alta', 'si', 'si']]))
+        np.array(ruta))
 
     return salida
 

@@ -6,7 +6,7 @@ from Apps.algoritmo.Clases.Apriori import Apriori
 from Apps.algoritmo.Clases.FpGrowth import fpGrowth
 from Apps.algoritmo.Clases.id3.main import id3
 from Apps.algoritmo.Clases.UtilsArchivos import leerDatos
-
+from Apps.algoritmo.Clases.UtilsArchivos import leerCsv
 
 
 # Create your models here.
@@ -87,11 +87,16 @@ class AlgoritmoReglas(models.Model):
     tiempoEntrenamiento = models.DurationField(null=True, verbose_name="Tiempo entrenamiento")
 
     def ejecutarAlgoritmo(self):
+        tc = int(0 if self.tamañoCondicion is None else self.tamañoCondicion)
+        tp = int(0 if self.tamañoPredicado is None else self.tamañoPredicado)
+        mf = int(0 if self.minimoFrecuencia is None else self.minimoFrecuencia)
+        ms = float(0.0 if self.minSuport is None else self.minSuport)
+        mc = float(0.0 if self.minConfianza is None else self.minConfianza)
         if self.foraneaAlgoritmo.nombreAlgoritmo == "Apriori":
             datosInput = leerDatos(self.foraneaDataSet.datos.url)
             print("---------------------")
             print(datosInput)
-            salida = Apriori(datosInput)
+            salida = Apriori(datosInput, tc, tp, ms, mc)
             print(salida)
             return str(salida)
         if self.foraneaAlgoritmo.nombreAlgoritmo == "FpGrowth":
@@ -124,6 +129,6 @@ class Id3(models.Model):
         entradaJson = leerDatos(self.entradaPrueba.dato.url)
         salida = id3(rutaEntrada, entradaJson)
 
-        return "Datos entrenamiento" + "\n" + leerCsv(rutaEntrada) + "\n" + \
+        return "Datos entrenamiento" + "\n" + str(leerCsv(rutaEntrada)) + "\n" + \
                " Datos prueba " + "\n" + str(entradaJson) + "\n" + \
                "Salida " + "\n" + str(salida)

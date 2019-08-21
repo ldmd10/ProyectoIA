@@ -4,9 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py" description="['hd', 'b', 'ch']]" line="30" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/ID3_C.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/algoritmo/Clases/id3/nodo.py" afterDir="false" />
+    <list default="true" id="8dfab626-b493-42bd-ab3b-58ce59e60e91" name="Default Changelist" comment="modificaciones finales">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoIA/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoIA/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,14 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="99" column="25" lean-forward="true" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+            <state relative-caret-position="292">
+              <caret line="104" column="29" lean-forward="true" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -192,7 +201,6 @@
         <option value="$PROJECT_DIR$/Apps/dataSet/urls.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/templates/list_data_set.html" />
         <option value="$PROJECT_DIR$/Archivos/dataSet/kmfq.txt" />
-        <option value="$PROJECT_DIR$/ProyectoIA/settings.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/forms.py" />
         <option value="$PROJECT_DIR$/Apps/dataSet/views.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/urls.py" />
@@ -220,11 +228,12 @@
         <option value="$PROJECT_DIR$/Apps/algoritmo/templates/conf_algoritmo.html" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/Clases/Apriori.py" />
         <option value="$PROJECT_DIR$/Apps/algoritmo/models.py" />
+        <option value="$PROJECT_DIR$/ProyectoIA/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -277,6 +286,11 @@
               <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
               <item name="Archivos" type="462c0819:PsiDirectoryNode" />
               <item name="Prueba" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
+              <item name="ProyectoIA" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -490,7 +504,7 @@
       <workItem from="1566139175404" duration="8208000" />
       <workItem from="1566163498677" duration="76058000" />
       <workItem from="1566322930533" duration="1478000" />
-      <workItem from="1566343577805" duration="30629000" />
+      <workItem from="1566343577805" duration="31371000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego el modelo entrenamiento">
       <created>1565212732444</created>
@@ -660,11 +674,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566375831306</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="modificaciones finales">
+      <created>1566375942396</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1566375942396</updated>
+    </task>
+    <task id="LOCAL-00026" summary="modificaciones finales">
+      <created>1566375964832</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1566375964832</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186704000" />
+    <option name="totallyTimeSpent" value="187446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,10 +704,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1429652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2967033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -693,7 +721,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.60392797" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.26350245" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.26744187" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -812,13 +840,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/media/gallery/20170216_182115.jpg" />
     <entry file="file://$PROJECT_DIR$/media/gallery/20170216_182128.jpg" />
-    <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/forms/widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1086,11 +1107,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/algoritmo/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="99" column="25" lean-forward="true" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+        <state relative-caret-position="292">
+          <caret line="104" column="29" lean-forward="true" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProyectoIA/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>

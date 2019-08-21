@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'ProyectoIA.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_proyecto_ia',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
+        'ENGINE':'django.db.backends.mysql',
+        'NAME': 'proyectoia',
+        'USER': 'root',
+        'PASSWORD': 'oegiank123',
+        'HOST': '35.231.168.132',
         'PORT': '3306',
     }
 }

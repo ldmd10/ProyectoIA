@@ -3,5 +3,7 @@
 user:admin
 pass:ADMINdjango
 
-Para crear el super usuario, para la administraci�n de django
+Para crear el super usuario, para la administración de django
 python manage.py createsuperuser
+
+cambiar en el settings.py la configuración de conexión
